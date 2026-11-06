@@ -1,0 +1,12 @@
+TIENDA ELECTRÓNICA MVC - COMPRA DESDE EL CATÁLOGO
+
+1. Copia la carpeta Tienda_Electronica_MVC a C:\xampp\htdocs\.
+2. Inicia Apache y MySQL en XAMPP.
+3. Comprueba en config/conexion.php el nombre de la base de datos y las credenciales de tu MySQL. Para XAMPP por defecto: root sin contraseña.
+4. Si no tienes tablas, importa database/01_estructura.sql desde phpMyAdmin; si ya tienes base de datos, revisa primero database/00_ajustes_si_ya_tienes_la_bd.sql y respalda tus datos. No vuelvas a importar estructura encima de tus datos sin respaldo.
+5. Si quieres productos de demostración, revisa database/02_datos_demo.sql y 03_imagenes_demo.sql antes de importarlos.
+6. Entra a http://localhost/Tienda_Electronica_MVC/ e inicia sesión.
+7. Abre Tienda, pulsa Comprar ahora: se agrega el producto y se abre Ventas > Nueva venta. Selecciona cliente y forma de pago, comprueba cantidades y pulsa Guardar venta.
+8. Para imágenes propias, abre Productos > Editar y sube la foto.
+
+NOTA: El proceso registra una venta interna; NO cobra automáticamente ni integra una pasarela de pagos. Requiere sesión iniciada y un cliente previamente registrado.

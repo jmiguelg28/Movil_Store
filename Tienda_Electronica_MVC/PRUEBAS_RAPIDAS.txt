@@ -1,0 +1,15 @@
+MOVILL STORE — GUIA RAPIDA
+
+1. XAMPP: activar Apache + MySQL.
+2. Respaldo de la BD antes de cualquier importación o cambio.
+3. BD existente: no cargar SQL de estructura ni demos.
+4. Nueva BD: cargar database/01_estructura.sql; demos solamente si se desean.
+5. Ejecutar database/04_migracion_segura.sql solo si faltan las columnas imagen y descripcion.
+6. Abrir http://localhost/Tienda_Electronica_MVC/
+7. Si no hay usuarios: admin / admin123; cambiar inmediatamente.
+8. Tienda > Agregar al carrito > Mi carrito > Continuar a la venta.
+9. Clientes y formas de pago deben existir para registrar una venta.
+10. Probar venta/compra y corroborar stock, totales, exportación CSV e impresión.
+11. El pago es interno (SIN pago por internet).
+
+Detalles y pruebas: LEEME_ENTREGA.md

@@ -1,0 +1,14 @@
+MOVILL STORE - VERSIÓN CONSOLIDADA
+
+ANTES DE INSTALAR: RESPALDA la carpeta C:\xampp\htdocs\Tienda_Electronica_MVC y exporta tu base desde phpMyAdmin.
+
+1. Descomprime el ZIP. Copia su carpeta Tienda_Electronica_MVC a C:\xampp\htdocs\ (solo después del respaldo).
+2. Inicia Apache y MySQL. En config/conexion.php revisa credenciales y nombre de base. En XAMPP por defecto root sin contraseña, si no la cambiaste.
+3. Si ya tienes tus productos, NO importes 01_estructura.sql ni 02_datos_demo.sql: podrías sobrescribir datos.
+4. Si faltan columnas de fotos, revisa 00_ajustes_si_ya_tienes_la_bd.sql y haz respaldo antes de aplicarlo.
+5. Para fotografías: Productos > Editar > subir una foto y guardar. Si no subes foto, aparecerá 'Sin imagen'; no se inventa una fotografía.
+6. Abre http://localhost/Tienda_Electronica_MVC/index.php?c=tienda&a=index y usa Ctrl+F5.
+7. Comprueba: Tienda > Comprar ahora > Ventas > cliente y forma de pago > Guardar venta. Verifica luego Ventas y stock en Productos.
+8. Prueba: crear/editar producto, foto, filtros, buscador, cliente, proveedor, compra, venta y eliminación.
+
+IMPORTANTE: Es un sistema de ventas internas; no incorpora pagos por internet ni checkout de clientes sin cuenta. Las pruebas automáticas disponibles comprueban sintaxis, no pueden probar tu MySQL local ni cada botón de tu navegador.
